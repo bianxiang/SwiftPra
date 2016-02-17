@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="协议传值" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2BA-y0-a5F">
+                                <rect key="frame" x="20" y="28" width="280" height="39"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="通过协议传值" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qvH-SL-4cR">
+                                <rect key="frame" x="20" y="90" width="280" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7u9-f6-gxs">
+                                <rect key="frame" x="20" y="147" width="280" height="30"/>
+                                <animations/>
+                                <state key="normal" title="通过协议传值"/>
+                                <connections>
+                                    <action selector="protocolPassData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MzU-cK-Het"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="通过闭包传值" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d9s-cH-Upe">
+                                <rect key="frame" x="20" y="271" width="280" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bye-52-7UY">
+                                <rect key="frame" x="20" y="328" width="280" height="30"/>
+                                <animations/>
+                                <state key="normal" title="通过闭包传值"/>
+                                <connections>
+                                    <action selector="closurePassData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7of-sr-Cbt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="通知传值" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vv2-1h-DXF">
+                                <rect key="frame" x="20" y="399" width="280" height="39"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="通过通知传值" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HPd-jb-Hg6">
+                                <rect key="frame" x="20" y="461" width="280" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Q4-ul-Uop">
+                                <rect key="frame" x="20" y="518" width="280" height="30"/>
+                                <animations/>
+                                <state key="normal" title="通过通知传值"/>
+                                <connections>
+                                    <action selector="notificationPassData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kye-8a-mce"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="闭包传值" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgx-BK-GBn">
+                                <rect key="frame" x="20" y="209" width="280" height="39"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="bye-52-7UY" secondAttribute="trailing" id="282-Lu-qsA"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="vv2-1h-DXF" secondAttribute="leading" id="2ac-vx-9nD"/>
+                            <constraint firstItem="mgx-BK-GBn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="189" id="2pm-pX-J13"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mgx-BK-GBn" secondAttribute="trailing" id="4s0-3D-Y2p"/>
+                            <constraint firstItem="qvH-SL-4cR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="5Th-Pf-eUH"/>
+                            <constraint firstItem="2BA-y0-a5F" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="7Pg-A0-e17"/>
+                            <constraint firstItem="7u9-f6-gxs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="127" id="7bv-iO-pha"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="2BA-y0-a5F" secondAttribute="leading" id="8eG-zf-MQK"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="qvH-SL-4cR" secondAttribute="leading" id="9gX-9C-54j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d9s-cH-Upe" secondAttribute="trailing" id="HhK-ZS-bfo"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="7Q4-ul-Uop" secondAttribute="leading" id="Huy-zb-HzU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2BA-y0-a5F" secondAttribute="trailing" id="IIX-WL-mnk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Q4-ul-Uop" secondAttribute="trailing" id="MAq-gu-Q9u"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="d9s-cH-Upe" secondAttribute="leading" id="NGy-EB-vVk"/>
+                            <constraint firstItem="7Q4-ul-Uop" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="498" id="OEe-BH-Wyk"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="7u9-f6-gxs" secondAttribute="leading" id="VCe-wA-ZCd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qvH-SL-4cR" secondAttribute="trailing" id="Vb0-ky-5QD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7u9-f6-gxs" secondAttribute="trailing" id="apf-bw-aqn"/>
+                            <constraint firstItem="bye-52-7UY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="308" id="bAh-TD-1QJ"/>
+                            <constraint firstItem="HPd-jb-Hg6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="441" id="cDC-2C-SAQ"/>
+                            <constraint firstItem="vv2-1h-DXF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="379" id="gBi-UJ-LrE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HPd-jb-Hg6" secondAttribute="trailing" id="h9j-py-ECg"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="bye-52-7UY" secondAttribute="leading" id="kJ7-Jg-2e6"/>
+                            <constraint firstItem="d9s-cH-Upe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="251" id="kvH-nu-dQ5"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="mgx-BK-GBn" secondAttribute="leading" id="prm-JF-J4I"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="HPd-jb-Hg6" secondAttribute="leading" id="wu4-0Q-GLk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vv2-1h-DXF" secondAttribute="trailing" id="wvx-Hv-Fgq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closureText" destination="d9s-cH-Upe" id="nac-dy-znk"/>
+                        <outlet property="notificationText" destination="HPd-jb-Hg6" id="9Y9-4t-7MW"/>
+                        <outlet property="protocolText" destination="qvH-SL-4cR" id="sny-x6-Igg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230" y="375"/>
+        </scene>
+    </scenes>
+</document>
